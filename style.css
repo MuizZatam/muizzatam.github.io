@@ -3,6 +3,21 @@
     margin: 0;
     padding: 0;
     background-color: #161A30;
-    color: #B6BBC4;
+    color: #F0ECE5;
     font-family: Satoshi, "Century Gothic", CenturyGothic, AppleGothic, Arial, Helvetica, sans-serif;
+}
+
+header{
+
+    margin: 20px 0 0 30px;
+}
+
+.heading{
+
+    font-size: 72px;
+}
+
+.heading-ahead{
+
+    color: #F6B17A;
 }
