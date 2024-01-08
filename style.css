@@ -14,10 +14,31 @@ header{
 
 .heading{
 
-    font-size: 72px;
+    font-size: 54px;
+    text-align: center;
 }
 
-.heading-ahead{
+.heading-ahead, .tag{
 
     color: #F6B17A;
 }
+
+.links{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.anchor{
+
+    margin-right: 18px;
+    transition: transform 0.4s;
+}
+
+.anchor:hover{
+
+    transform: scale(1.3);
+}
+
