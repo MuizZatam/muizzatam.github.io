@@ -59,7 +59,7 @@ header{
 
 .content-section{
 
-    margin: 30px 0 0 20px;
+    margin: 30px 20px 0 20px;
 }
 
 .subheading{
@@ -74,3 +74,42 @@ header{
     font-size: 24px;
 }
 
+.tech-img{
+
+    width: 64px;
+    display: block;
+    margin: 0 0 15px 10px;
+    align-items: center;
+    transition: transform 2s, box-shadow 0.5s;
+}
+
+.tech-img:hover{
+
+    transform: rotate(360deg);
+}
+
+.tech-img-container{
+
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+.child1{
+
+    margin: 0 40px 0 0;
+}
+
+.child2{
+
+    margin: 0 0 0 20px;
+}
+
+progress{
+
+    width: 80px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: #fff;
+    display: block;
+}
