@@ -113,3 +113,22 @@ progress{
     background-color: #fff;
     display: block;
 }
+
+.experiences-title{
+
+    font-size: 18px;
+    color: #F6B17A;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.timeline{
+
+    color: #F0ECE5;
+    font-size: 18px;
+}
+
+.experiences{
+
+    margin: 30px 0 0 0;
+}
