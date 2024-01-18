@@ -142,4 +142,15 @@ nav{
 
     margin-right: 20px;
     text-decoration: none;
+
+}
+
+.nav-img{
+
+    transition: transform 0.5s;
+}
+
+.nav-img:hover{
+
+    transform: scale(1.2);
 }
