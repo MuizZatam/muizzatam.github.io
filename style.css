@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body {
+  background-image: linear-gradient(to right, #c90d23, #cd2051);
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.flipper {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-container,
+.front,
+.back {
+  height: 350px;
+  width: 600px;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+/* Front */
+
+.front {
+  background-color: #222;
+  background-image: url('../img/logo.png');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(0);
+  z-index: 2;
+}
+
+/* Back */
+
+.back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+}
+
+.logo {
+  width: 25%;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 90%;
+  position: absolute;
+  left: 10%;
+}
+
+.logo img {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  height: auto;
+}
+
+.back h1,
+.back p,
+.back .font-a-icons {
+  color: #222;
+  font-family: "Lato";
+  margin-left: 30%;
+  line-height: 90%;
+}
+
+.back h1 {
+  margin-top: 5%;
+}
+
+.back p {
+  font-size: 16px;
+  padding-bottom: 15px;
+  width: 45%;
+  border-bottom: 2px solid #222;
+}
+
+.back .bold {
+  font-weight: bold;
+}
+
+.back .font-a-icons {
+  margin-top: 25px;
+}
+
+.back .font-a-icons .icon-group {
+  margin-top: 8px;
+}
+
+.back .font-a-icons span,
+.back .font-a-icons .fa,
+.back .font-a-icons a {
+  color: #222;
+}
+
+.back .font-a-icons span,
+.back .font-a-icons a {
+  font-size: 16px;
+}
+
+.back .social {
+  display: flex;
+}
+
+.social {
+
+    margin-left: 10%;
+}
+
+.back .icon-box {
+  position: relative;
+  color: #222;
+  top: 55px;
+  left: 25%;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #222;
+  margin: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.back .icon-box:hover {
+  box-shadow: inset 0 50px 0 0 #222;
+  color: #fff;
+}
