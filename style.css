@@ -176,4 +176,10 @@ body {
         margin-top: -20px;
     }
 
+    .content {
+
+        left: 0%;
+        width: 100%;
+    }
+
 }
